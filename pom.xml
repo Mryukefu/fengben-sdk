@@ -14,6 +14,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <spring-boot.version>2.3.12.RELEASE</spring-boot.version>
         <spring-cloud.version>Hoxton.SR12</spring-cloud.version>
+        <spring-cloud-alibaba-dependencies.version>2.2.6.RELEASE</spring-cloud-alibaba-dependencies.version>
     </properties>
 
     <modules>
@@ -25,7 +26,6 @@
         <module>fengben-sdk-config</module>
         <module>fengben-sdk-common</module>
         <module>fengben-sdk-gateway</module>
-
     </modules>
 
     <dependencyManagement>
@@ -46,6 +46,14 @@
                 <scope>import</scope>
             </dependency>
 
+
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>${spring-cloud-alibaba-dependencies.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
